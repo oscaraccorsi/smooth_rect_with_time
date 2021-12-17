@@ -76,8 +76,8 @@ function draw() {
   rect(0-windowWidth/8, 0, windowWidth/4, windowHeight/4);
   pop();
   
-  
-  
-
-  
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}  
