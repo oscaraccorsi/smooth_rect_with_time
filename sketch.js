@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  //background(0);
 
   translate(width/2, height/2);
   rotate(-90);
@@ -57,7 +57,7 @@ function draw() {
   push();
   fill(50, 50, 50, 90);
   rotate(secAngle);
-  rect(0-windowWidth/8, 0, windowWidth/4, windowHeight/4);
+  rect(0-windowWidth/12, 0, windowWidth/6, windowHeight/6);
   pop();
   
   let minAngle = map(min*2, 0, 60, 0, 360);      //minute
@@ -65,7 +65,7 @@ function draw() {
   stroke(255, 0, 0);
   push();
   rotate(minAngle);
-  rect(0-windowWidth/8, 0, windowWidth/4, windowHeight/4);
+  rect(0-windowWidth/10, 0, windowWidth/5, windowHeight/5);
   pop();
 
   let hourAngle = map(hr % 12, 0, 12, 0, 360);    //hour
